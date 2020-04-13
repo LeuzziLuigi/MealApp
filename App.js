@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-//Luigiiiiiiii
+//iiiiiiii
 //Leuzzzi
 export default function App() {
   return (
