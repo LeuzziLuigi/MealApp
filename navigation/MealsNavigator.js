@@ -10,14 +10,14 @@ import { createDrawerNavigator } from 'react-navigation-drawer';
 
 import CategoriesScreen from '../screens/CategoriesScreen';
 import CategoryMealsScreen from '../screens/CategoryMealsScreen';
-import MealDetailScreen from '../screens/MealsDetailScreen';
+import MealsDetailScreen from '../screens/MealsDetailScreen';
 
 
 const MealsNavigator = createStackNavigator({
     Categories: CategoriesScreen,
     CategoryMeals: CategoryMealsScreen,
-    MealDetail: MealDetailScreen
-    
+    MealsDetail: MealsDetailScreen
+
 });
 
 export default createAppContainer(MealsNavigator);
