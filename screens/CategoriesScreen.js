@@ -10,10 +10,10 @@ const CategoriesScreen = props => {
 
     const renderGridItem = itemData => {
         return (
-            <TouchableOpacity 
-            style={styles.gridItem} 
-            onPress={() => {
-                props.navigation.navigate('CategoryMeals', {categoryId: itemData.item.id})
+            <TouchableOpacity
+                style={styles.gridItem}
+                onPress={() => {
+                    props.navigation.navigate('CategoryMeals', { categoryId: itemData.item.id })
                 }}
             >
                 <View>
@@ -24,11 +24,11 @@ const CategoriesScreen = props => {
     };
 
     return (
-            <FlatList
-                numColumns={2}
-                data={CATEGORIES}
-                renderItem={renderGridItem}
-            />
+        <FlatList
+            numColumns={2}
+            data={CATEGORIES}
+            renderItem={renderGridItem}
+        />
 
     );
 };
@@ -49,6 +49,8 @@ const styles = StyleSheet.create({
     },
     gridItem: {
         flex: 1,
+        marginVertical: 30,
+
     }
 });
 
